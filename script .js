@@ -25,7 +25,22 @@ confirm("Question");
 
 */
 
-'use strict';
-const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "1");
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "1"); //1 zadanie
+
+const personalMovieDB = { //2 zadanie
+    count: numberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false
+};
+
+const answers = [];
+answers [0] = prompt("Один из последних просмотренных фильмов?","");
+answers[1] = prompt("На сколько оцените его?","");
+answers [2] = prompt("Один из последних просмотренных фильмов?","");
+answers [3] = prompt("На сколько оцените его?","");
+personalMovieDB.movies[answers[0]] = answers[1];
+personalMovieDB.movies[answers[2]] = answers[3];
 
 

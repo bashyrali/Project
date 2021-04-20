@@ -24,8 +24,9 @@ confirm("Question");
 
 
 */
+'use strict';
 
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "1"); //1 zadanie
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", ""); //1 zadanie
 
 const personalMovieDB = { //2 zadanie
     count: numberOfFilms,
